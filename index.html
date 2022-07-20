@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <h1 id="title">Hello we are software develpers</h1>
-    <p id="description">we are going to be the most talented full stack develpers in the world</p>
+    <p id="description">
+      we are going to be the most talented full stack develpers in the world
+    </p>
     <form id="survey-form" action="">
-      Input your name: <input type="text" name="name" id="name">
-      <input type="email" id="email" required>
-      <input required  min="1" max="10" type="number" id="number">
+      <label id="name-label" for="">enter your name</label>
+      <input placeholder="name" required type="text" name="name" id="name" />
+      <label id="email-label" for="">enter your email</label>
+      <input placeholder="email" type="email" id="email" required />
+      <label id="number-label" for="">enter your number</label>
+      <input
+        placeholder="number"
+        required
+        min="1"
+        max="100"
+        type="number"
+        id="number"
+      />
+      <select name="" id="dropdown">
+        <option value="first one">First one</option>
+        <option value="second one">Second one</option>
+      </select>
+      <div class="group">
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked=""
+        />
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />
+      </div>
+      <div class="group">
+        <input value="front-end" type="checkbox" name="" id="" />
+        <input value="back-end" type="checkbox" name="" id="" />
+        <input value="full-stack" type="checkbox" name="" id="" />
+      </div>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button id="submit" type="submit">Submit</button>
     </form>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-  
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
